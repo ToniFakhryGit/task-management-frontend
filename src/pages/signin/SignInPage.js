@@ -40,6 +40,7 @@ class SignInPage extends Component {
       await this.props.userStore.signin(username, password);
       window.location.hash = '/tasks';
     } catch (error) {
+      console.log(error);
       const errorMessage = error.response.data.message;
       this.setState({ errorMessage });
     }
