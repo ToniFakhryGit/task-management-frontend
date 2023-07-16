@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default class BaseHttpService {
-  BASE_URL = 'https://main.d23ie91a6ryb9j.amplifyapp.com';
+  BASE_URL = 'http://ec2-13-238-141-34.ap-southeast-2.compute.amazonaws.com:3000';
   _accessToken = null;
 
   constructor(routerStore) {
