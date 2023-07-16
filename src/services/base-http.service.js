@@ -34,7 +34,7 @@ export default class BaseHttpService {
 
   _handleHttpError(error) {
     const { statusCode } = error.response.data;
-
+     console.log(error);
     if (statusCode !== 401) {
       throw error;
     } else {
